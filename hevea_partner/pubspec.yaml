@@ -1,0 +1,164 @@
+name: hevea_partner
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  # Local packages
+  hevea_core:
+    path: ../hevea_core
+
+  # Essentials
+  intl: ^0.17.0
+  uni_links: ^0.5.1
+  url_launcher: ^6.1.2
+  # sentry_flutter: ^6.5.1
+  package_info_plus: ^3.0.2
+
+  # State Management
+  flutter_riverpod: ^2.0.2
+  riverpod_generator: ^1.0.4
+  riverpod_annotation: ^1.0.4
+
+  # Native
+  flutter_native_splash: ^2.2.6
+
+  # Freezed
+  freezed_annotation: ^2.2.0
+  json_annotation:
+    ^4.8.0
+
+    #UI
+  lottie: ^1.4.1
+
+  #payment
+  logger_flutter:
+    git:
+      url: https://github.com/GarageAppTeam/logger_flutter.git
+      ref: master # branch name
+
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  jovial_svg: ^1.1.14
+  cupertino_icons: ^1.0.5
+
+  #Scanner
+  mobile_scanner: ^3.2.0
+  pdf: ^3.8.4
+  path_provider: ^2.0.15
+  open_file_plus: ^3.4.1
+  flutter_secure_storage: ^8.0.0
+  http_interceptor: ^1.0.2
+  easy_debounce: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Freezed
+  freezed: ^2.1.0+1
+  build_runner: ^2.2.0
+  json_serializable: ^6.3.1
+
+  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.11.0
+  app_rename: ^0.0.1
+  change_app_package_name: ^1.1.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/.env/
+    - assets/images/
+    - assets/images/icons/
+    - assets/images/icons/logos/
+    - assets/images/icons/app/
+    - assets/images/illustrations/
+    - assets/images/illustrations/hevea/
+    - assets/languages/
+    - assets/lottie/
+
+  fonts:
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-ExtraLight.ttf
+          weight: 200
+
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-Thin.ttf
+          weight: 300
+
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-Bold.ttf
+          weight: 700
+
+        - asset: assets/fonts/IBMPlexArabic/IBMPlexSansArabic-Bold.ttf
+          weight: 800
+
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo/Cairo-ExtraLight.ttf
+          weight: 200
+
+        - asset: assets/fonts/Cairo/Cairo-Light.ttf
+          weight: 300
+
+        - asset: assets/fonts/Cairo/Cairo-Regular.ttf
+          weight: 400
+
+        - asset: assets/fonts/Cairo/Cairo-Medium.ttf
+          weight: 500
+
+        - asset: assets/fonts/Cairo/Cairo-SemiBold.ttf
+          weight: 600
+
+        - asset: assets/fonts/Cairo/Cairo-Bold.ttf
+          weight: 700
+
+        - asset: assets/fonts/Cairo/Cairo-ExtraBold.ttf
+          weight: 800
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+
+        - asset: assets/fonts/Roboto/Roboto-Black.ttf
+          weight: 900
+
+    - family: heveIcons
+      fonts:
+        - asset: assets/fonts/heveIcons.ttf
+
+    - family: heveaPartnerIcons
+      fonts:
+        - asset: assets/fonts/heveaPartnerIcons.ttf
